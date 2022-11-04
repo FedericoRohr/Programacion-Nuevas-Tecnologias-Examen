@@ -133,7 +133,7 @@ export default {
       nombreMaxLength: 15,
       pagos:[],
       totales:0,
-      presupuesto:null,
+      presupuesto:'',
     };
   },
   methods: {
@@ -162,7 +162,7 @@ export default {
       this.totales = importe
     },
     pintarTotal() {
-      if(this.presupuesto<this.totales && this.presupuesto != null){ /// primero se fija el presupuesto por sobre el resto 
+      if(this.presupuesto<this.totales && this.presupuesto != ''){ /// primero se fija el presupuesto por sobre el resto 
       return 'red'
       }
 
